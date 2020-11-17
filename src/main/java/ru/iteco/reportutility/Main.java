@@ -31,7 +31,7 @@ public class Main {
             System.out.println(str);
             var array = str.split(" ");
 
-            service = getReportService(array);
+            service = getReportService(array); // strategy
             var report = service.createReport();
             printReport(report);
         } catch (Exception e) {

@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  *
  * @author Ilya_Sukhachev
  */
-public class ReportRow {
+public class ReportRow { // POJO
 
     private String name;
     private BigDecimal value;

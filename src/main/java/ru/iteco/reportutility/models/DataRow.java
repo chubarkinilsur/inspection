@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  *
  * @author Ilya_Sukhachev
  */
-public class DataRow {
+public class DataRow { // POJO
 
     private BigDecimal cost;
     private BigDecimal count;

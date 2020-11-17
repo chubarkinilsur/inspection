@@ -40,7 +40,7 @@ public abstract class ReportServiceBase implements ReportService {
         return dataTransformer.transformData(data);
     }
 
-    protected abstract DataRow[] getDataRows(String text);
+    protected abstract DataRow[] getDataRows(String text); // template method
 
     private ReportConfig parseConfig() {
         return new ReportConfig(Arrays.asList(args).contains("-withData"), Arrays.asList(args).contains("-withIndex"),

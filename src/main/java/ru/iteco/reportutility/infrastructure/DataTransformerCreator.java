@@ -1,10 +1,6 @@
 package ru.iteco.reportutility.infrastructure;
 
-import ru.iteco.reportutility.infrastructure.transformers.CostSumReportTransformer;
-import ru.iteco.reportutility.infrastructure.transformers.CountSumReportTransformer;
-import ru.iteco.reportutility.infrastructure.transformers.VolumeSumReportTransformer;
-import ru.iteco.reportutility.infrastructure.transformers.WeightSumReportTransformer;
-import ru.iteco.reportutility.infrastructure.transformers.WithDataReportTransformer;
+import ru.iteco.reportutility.infrastructure.transformers.*;
 import ru.iteco.reportutility.models.ReportConfig;
 
 /**
@@ -14,7 +10,7 @@ import ru.iteco.reportutility.models.ReportConfig;
  */
 public class DataTransformerCreator { // фабрика
 
-    public static DataTransformer createTransformer(ReportConfig config) {
+    public static DataTransformer createTransformer(ReportConfig config) { // chain of responsibility
         DataTransformer service = new ConfigDataTransformer(config);
 
         if (config.isWithData()) {

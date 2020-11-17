@@ -9,7 +9,7 @@ import ru.iteco.reportutility.models.Report;
  *
  * @author Ilya_Sukhachev
  */
-public abstract class ReportServiceTransformerBase implements DataTransformer {
+public abstract class ReportServiceTransformerBase implements DataTransformer { // decorator
 
     protected final DataTransformer dataTransformer;
 
