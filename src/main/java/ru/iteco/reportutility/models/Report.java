@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author Ilya_Sukhachev
  */
-public class Report {
+public class Report { // POJO
 
     private ReportConfig config;
     private DataRow[] data;

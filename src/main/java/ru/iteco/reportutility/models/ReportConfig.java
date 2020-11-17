@@ -5,7 +5,7 @@ package ru.iteco.reportutility.models;
  *
  * @author Ilya_Sukhachev
  */
-public class ReportConfig {
+public class ReportConfig { // POJO
 
     private boolean withData;
 
